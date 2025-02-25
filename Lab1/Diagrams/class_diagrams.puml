@@ -1,0 +1,53 @@
+@startuml
+class Airplane {
+    - model: str
+    - capacity: int
+    - passengers: list
+    - crew: list
+    - status: str
+
+    + add_passenger(Passenger)
+    + add_crew(Crew)
+    + take_off()
+    + land()
+}
+
+class Passenger {
+    - name: str
+    - ticket: Ticket
+}
+
+class Crew {
+    - name: str
+    - role: str
+}
+
+class Runway {
+    - is_available: bool
+
+    + occupy()
+    + free()
+}
+
+class Ticket {
+    - flight_number: str
+    - seat: str
+}
+
+class InflightService {
+    + serve_meal()
+    + serve_drinks()
+}
+
+class FlightOperations {
+    + plan_route(start, destination)
+    + ensure_safety()
+}
+
+Airplane "1" -- "*" Passenger : has
+Airplane "1" -- "*" Crew : has
+Airplane --> Runway : uses
+Airplane --> InflightService : uses
+Airplane --> FlightOperations : uses
+Passenger --> Ticket : has
+@enduml
