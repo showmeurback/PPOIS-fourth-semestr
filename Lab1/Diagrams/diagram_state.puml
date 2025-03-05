@@ -1,0 +1,110 @@
+@startuml
+[*] --> Idle
+
+state Idle {
+    note right
+        Actions:
+        - Program starts
+        - Menu displayed
+    end note
+}
+
+state "Register Passenger" as Register_Passenger {
+    [*] --> Waiting_For_Input
+    Waiting_For_Input --> Passenger_Registered : Valid input
+    Waiting_For_Input --> Error_State : Invalid input
+    Error_State --> Waiting_For_Input : Retry registration
+}
+
+state "Add Crew Member" as Add_Crew {
+    [*] --> Waiting_For_Input
+    Waiting_For_Input --> Crew_Added : Valid input
+    Waiting_For_Input --> Error_State : Invalid input
+    Error_State --> Waiting_For_Input : Retry adding crew
+}
+
+state "Plan Flight Route" as Plan_Route {
+    [*] --> Waiting_For_Input
+    Waiting_For_Input --> Route_Planned : Valid input
+    Waiting_For_Input --> Error_State : Invalid input
+    Error_State --> Waiting_For_Input : Retry planning route
+}
+
+state "Occupy Runway for Takeoff" as Occupy_Runway {
+    [*] --> Check_Runway_Status
+    Check_Runway_Status --> Runway_Occupied : Runway is free
+    Check_Runway_Status --> Error_State : Runway is occupied
+    Error_State --> Check_Runway_Status : Retry takeoff
+}
+
+state "Serve Meals to Passengers" as Serve_Meals {
+    [*] --> Meal_Service_Started
+    Meal_Service_Started --> Meal_Service_Completed : Meals served
+}
+
+state "Serve Drinks to Passengers" as Serve_Drinks {
+    [*] --> Drink_Service_Started
+    Drink_Service_Started --> Drink_Service_Completed : Drinks served
+}
+
+state "Ensure Safety Procedures" as Ensure_Safety {
+    [*] --> Safety_Procedures_Started
+    Safety_Procedures_Started --> Safety_Procedures_Completed : Safety ensured
+}
+
+state "Land the Airplane" as Land_Airplane {
+    [*] --> Check_Runway_Status
+    Check_Runway_Status --> Landing_Completed : Runway is free
+    Check_Runway_Status --> Error_State : Runway is occupied
+    Error_State --> Check_Runway_Status : Retry landing
+}
+
+state "Free the Runway After Landing" as Free_Runway {
+    [*] --> Runway_Freed : Runway freed successfully
+}
+
+state "Save Airplane State" as Save_State {
+    [*] --> Waiting_For_Filename
+    Waiting_For_Filename --> State_Saved : Valid filename
+    Waiting_For_Filename --> Error_State : Invalid filename
+    Error_State --> Waiting_For_Filename : Retry saving
+}
+
+state "Load Airplane State" as Load_State {
+    [*] --> Waiting_For_Filename
+    Waiting_For_Filename --> State_Loaded : File exists
+    Waiting_For_Filename --> Error_State : File not found
+    Error_State --> Waiting_For_Filename : Retry loading
+}
+
+state "Exit Program" as Exit_Program {
+    [*] --> Program_Exiting
+}
+
+Idle --> Register_Passenger : Option 1 selected
+Idle --> Add_Crew : Option 2 selected
+Idle --> Plan_Route : Option 3 selected
+Idle --> Occupy_Runway : Option 4 selected
+Idle --> Serve_Meals : Option 5 selected
+Idle --> Serve_Drinks : Option 6 selected
+Idle --> Ensure_Safety : Option 7 selected
+Idle --> Land_Airplane : Option 8 selected
+Idle --> Free_Runway : Option 9 selected
+Idle --> Save_State : Option 10 selected
+Idle --> Load_State : Option 11 selected
+Idle --> Exit_Program : Option 12 selected
+
+Register_Passenger --> Idle : Operation completed
+Add_Crew --> Idle : Operation completed
+Plan_Route --> Idle : Operation completed
+Occupy_Runway --> Idle : Operation completed
+Serve_Meals --> Idle : Operation completed
+Serve_Drinks --> Idle : Operation completed
+Ensure_Safety --> Idle : Operation completed
+Land_Airplane --> Idle : Operation completed
+Free_Runway --> Idle : Operation completed
+Save_State --> Idle : Operation completed
+Load_State --> Idle : Operation completed
+Exit_Program --> [*] : Program terminated
+
+@enduml
