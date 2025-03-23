@@ -79,8 +79,8 @@ source .venv/bin/activate  # Для Linux/MacOS
 
 1. Склонируйте проект и перейдите в его директорию:
    ```bash
-   git clone https://github.com/ваш_репозиторий/SportRecordsManager.git
-   cd SportRecordsManager
+   git clone https://github.com/showmeurback/PPOIS-fourth-semestr/blob/main/Lab2
+   cd Lab2
    ```
 2. Запустите приложение:
    ```bash
