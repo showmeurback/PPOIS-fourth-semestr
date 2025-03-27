@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<records>
+	<record>
+	<fio>Петр Титов</fio>
+	<composition>Основной</composition>
+	<position>Защитник</position>
+	<titles>11</titles>
+	<sport_type>Хоккей</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Владимир Сидоров</fio>
+	<composition>Основной</composition>
+	<position>Защитник</position>
+	<titles>6</titles>
+	<sport_type>Футбол</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Сергей Смирнов</fio>
+	<composition>Основной</composition>
+	<position>Разыгрывающий</position>
+	<titles>10</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Сергей Попов</fio>
+	<composition>Основной</composition>
+	<position>Диагональный</position>
+	<titles>11</titles>
+	<sport_type>Волейбол</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Иван Морозов</fio>
+	<composition>Запасной</composition>
+	<position>Либеро</position>
+	<titles>13</titles>
+	<sport_type>Волейбол</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Дмитрий Васильев</fio>
+	<composition>Основной</composition>
+	<position>Вратарь</position>
+	<titles>19</titles>
+	<sport_type>Футбол</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Михаил Попов</fio>
+	<composition>Запасной</composition>
+	<position>Квоттербек</position>
+	<titles>12</titles>
+	<sport_type>Регби</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Алексей Морозов</fio>
+	<composition>Запасной</composition>
+	<position>Нападающий</position>
+	<titles>5</titles>
+	<sport_type>Хоккей</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Владимир Смирнов</fio>
+	<composition>Основной</composition>
+	<position>Квоттербек</position>
+	<titles>12</titles>
+	<sport_type>Регби</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Иван Смирнов</fio>
+	<composition>Основной</composition>
+	<position>Вратарь</position>
+	<titles>20</titles>
+	<sport_type>Хоккей</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Дмитрий Смирнов</fio>
+	<composition>Основной</composition>
+	<position>Защитник</position>
+	<titles>14</titles>
+	<sport_type>Футбол</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Дмитрий Морозов</fio>
+	<composition>Основной</composition>
+	<position>Квоттербек</position>
+	<titles>12</titles>
+	<sport_type>Регби</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Михаил Морозов</fio>
+	<composition>Запасной</composition>
+	<position>Нападающий</position>
+	<titles>1</titles>
+	<sport_type>Футбол</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Петр Федоров</fio>
+	<composition>Запасной</composition>
+	<position>Вратарь</position>
+	<titles>1</titles>
+	<sport_type>Футбол</sport_type>
+	<rank>МСМК</rank>
+	</record>
+	<record>
+	<fio>Владимир Федоров</fio>
+	<composition>Основной</composition>
+	<position>Защитник</position>
+	<titles>14</titles>
+	<sport_type>Футбол</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Владимир Иванов</fio>
+	<composition>Запасной</composition>
+	<position>Центровой</position>
+	<titles>18</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>МСМК</rank>
+	</record>
+	<record>
+	<fio>Алексей Петров</fio>
+	<composition>Запасной</composition>
+	<position>Форвард</position>
+	<titles>17</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Николай Морозов</fio>
+	<composition>Основной</composition>
+	<position>Центровой</position>
+	<titles>8</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>МСМК</rank>
+	</record>
+	<record>
+	<fio>Сидор Морозов</fio>
+	<composition>Основной</composition>
+	<position>Центровой</position>
+	<titles>1</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Дмитрий Кузнецов</fio>
+	<composition>Запасной</composition>
+	<position>Фланкер</position>
+	<titles>17</titles>
+	<sport_type>Регби</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Петр Сидоров</fio>
+	<composition>Основной</composition>
+	<position>Нападающий</position>
+	<titles>18</titles>
+	<sport_type>Хоккей</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Михаил Федоров</fio>
+	<composition>Запасной</composition>
+	<position>Форвард</position>
+	<titles>8</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Сидор Смирнов</fio>
+	<composition>Запасной</composition>
+	<position>Хукер</position>
+	<titles>1</titles>
+	<sport_type>Регби</sport_type>
+	<rank>МСМК</rank>
+	</record>
+	<record>
+	<fio>Алексей Петров</fio>
+	<composition>Основной</composition>
+	<position>Защитник</position>
+	<titles>15</titles>
+	<sport_type>Футбол</sport_type>
+	<rank>МСМК</rank>
+	</record>
+	<record>
+	<fio>Алексей Кузнецов</fio>
+	<composition>Запасной</composition>
+	<position>Нападающий</position>
+	<titles>4</titles>
+	<sport_type>Хоккей</sport_type>
+	<rank>МСМК</rank>
+	</record>
+	<record>
+	<fio>Петр Кузнецов</fio>
+	<composition>Основной</composition>
+	<position>Полузащитник</position>
+	<titles>5</titles>
+	<sport_type>Футбол</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Петр Титов</fio>
+	<composition>Запасной</composition>
+	<position>Разыгрывающий</position>
+	<titles>2</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Сергей Смирнов</fio>
+	<composition>Запасной</composition>
+	<position>Хукер</position>
+	<titles>3</titles>
+	<sport_type>Регби</sport_type>
+	<rank>МСМК</rank>
+	</record>
+	<record>
+	<fio>Петр Титов</fio>
+	<composition>Основной</composition>
+	<position>Форвард</position>
+	<titles>15</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Сергей Сидоров</fio>
+	<composition>Запасной</composition>
+	<position>Разыгрывающий</position>
+	<titles>4</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Сидор Смирнов</fio>
+	<composition>Основной</composition>
+	<position>Вратарь</position>
+	<titles>7</titles>
+	<sport_type>Хоккей</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Андрей Федоров</fio>
+	<composition>Запасной</composition>
+	<position>Вратарь</position>
+	<titles>19</titles>
+	<sport_type>Футбол</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Алексей Петров</fio>
+	<composition>Запасной</composition>
+	<position>Квоттербек</position>
+	<titles>12</titles>
+	<sport_type>Регби</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Иван Титов</fio>
+	<composition>Основной</composition>
+	<position>Форвард</position>
+	<titles>20</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Михаил Титов</fio>
+	<composition>Запасной</composition>
+	<position>Центральный блокирующий</position>
+	<titles>16</titles>
+	<sport_type>Волейбол</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Владимир Федоров</fio>
+	<composition>Основной</composition>
+	<position>Разыгрывающий</position>
+	<titles>13</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Дмитрий Федоров</fio>
+	<composition>Запасной</composition>
+	<position>Форвард</position>
+	<titles>0</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Владимир Титов</fio>
+	<composition>Запасной</composition>
+	<position>Вратарь</position>
+	<titles>14</titles>
+	<sport_type>Футбол</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Сергей Федоров</fio>
+	<composition>Запасной</composition>
+	<position>Хукер</position>
+	<titles>9</titles>
+	<sport_type>Регби</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Алексей Иванов</fio>
+	<composition>Основной</composition>
+	<position>Центровой</position>
+	<titles>7</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Сидор Титов</fio>
+	<composition>Основной</composition>
+	<position>Либеро</position>
+	<titles>6</titles>
+	<sport_type>Волейбол</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Иван Титов</fio>
+	<composition>Запасной</composition>
+	<position>Разыгрывающий</position>
+	<titles>6</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>МСМК</rank>
+	</record>
+	<record>
+	<fio>Дмитрий Попов</fio>
+	<composition>Основной</composition>
+	<position>Вратарь</position>
+	<titles>17</titles>
+	<sport_type>Хоккей</sport_type>
+	<rank>МСМК</rank>
+	</record>
+	<record>
+	<fio>Николай Попов</fio>
+	<composition>Основной</composition>
+	<position>Форвард</position>
+	<titles>5</titles>
+	<sport_type>Баскетбол</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Сергей Кузнецов</fio>
+	<composition>Запасной</composition>
+	<position>Защитник</position>
+	<titles>10</titles>
+	<sport_type>Хоккей</sport_type>
+	<rank>МС</rank>
+	</record>
+	<record>
+	<fio>Алексей Морозов</fio>
+	<composition>Запасной</composition>
+	<position>Хукер</position>
+	<titles>5</titles>
+	<sport_type>Регби</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Сергей Смирнов</fio>
+	<composition>Запасной</composition>
+	<position>Защитник</position>
+	<titles>1</titles>
+	<sport_type>Хоккей</sport_type>
+	<rank>МСМК</rank>
+	</record>
+	<record>
+	<fio>Сергей Смирнов</fio>
+	<composition>Запасной</composition>
+	<position>Диагональный</position>
+	<titles>15</titles>
+	<sport_type>Волейбол</sport_type>
+	<rank>КМС</rank>
+	</record>
+	<record>
+	<fio>Дмитрий Иванов</fio>
+	<composition>Основной</composition>
+	<position>Либеро</position>
+	<titles>8</titles>
+	<sport_type>Волейбол</sport_type>
+	<rank>МСМК</rank>
+	</record>
+	<record>
+	<fio>Николай Попов</fio>
+	<composition>Запасной</composition>
+	<position>Нападающий</position>
+	<titles>15</titles>
+	<sport_type>Хоккей</sport_type>
+	<rank>МС</rank>
+	</record>
+	</records>
