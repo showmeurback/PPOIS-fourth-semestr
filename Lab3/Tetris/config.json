@@ -1,0 +1,36 @@
+{
+    "window": {
+        "block_size": 30,
+        "grid_width": 10,
+        "grid_height": 20
+    },
+    "colors": {
+        "black": [0, 0, 0],
+        "white": [255, 255, 255],
+        "cyan": [0, 255, 255],
+        "yellow": [255, 255, 0],
+        "magenta": [255, 0, 255],
+        "red": [255, 0, 0],
+        "green": [0, 255, 0],
+        "blue": [0, 0, 255],
+        "orange": [255, 165, 0]
+    },
+    "shapes": [
+        {"name": "I", "layout": [[1, 1, 1, 1]], "color": "cyan"},
+        {"name": "O", "layout": [[1, 1], [1, 1]], "color": "yellow"},
+        {"name": "T", "layout": [[1, 1, 1], [0, 1, 0]], "color": "magenta"},
+        {"name": "L", "layout": [[1, 1, 1], [1, 0, 0]], "color": "orange"},
+        {"name": "J", "layout": [[1, 1, 1], [0, 0, 1]], "color": "blue"},
+        {"name": "S", "layout": [[1, 1, 0], [0, 1, 1]], "color": "green"},
+        {"name": "Z", "layout": [[0, 1, 1], [1, 1, 0]], "color": "red"}
+    ],
+    "scoring": {
+        "points_per_line": 100
+    },
+    "levels": [
+        {"level": 1, "fall_speed": 50},
+        {"level": 2, "fall_speed": 40},
+        {"level": 3, "fall_speed": 30}
+    ],
+    "help": "Правила игры Тетрис:\n1. Фигуры падают сверху вниз.\n2. Используйте стрелки:\n   - Влево/Вправо: перемещение\n   - Вниз: ускорение падения\n   - Вверх: поворот\n3. Заполните линию, чтобы она исчезла.\n4. Игра заканчивается, если фигуры достигают верха."
+}
