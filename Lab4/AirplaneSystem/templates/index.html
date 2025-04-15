@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Airline Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            margin-top: 40px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #2c3e50;
+        }
+        form {
+            margin: 20px 0;
+        }
+        button, input[type="submit"] {
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover, input[type="submit"]:hover {
+            background-color: #3498db;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            li {
+                padding: 10px;
+            }
+            button, input[type="submit"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Airline Management System</h1>
+
+    <h2>Airplanes</h2>
+    <ul>
+    {% for airplane in airplanes %}
+        <li>
+            <a href="{{ url_for('airplane_details', id=loop.index0) }}">{{ airplane.model }}</a> -
+            Status: {{ airplane.status }},
+            Passengers: {{ airplane.passengers | length }}/{{ airplane.capacity }}
+        </li>
+    {% endfor %}
+    </ul>
+    <a href="{{ url_for('add_airplane') }}">Add New Airplane</a>
+
+    <h2>Runways</h2>
+    <ul>
+    {% for runway in runways %}
+        <li>
+            Runway {{ loop.index0 }}:
+            {% if runway.is_available %}
+                Free
+                <form action="{{ url_for('occupy_runway', id=loop.index0) }}" method="post" style="display:inline;">
+                    <button type="submit">Occupy</button>
+                </form>
+            {% else %}
+                Occupied
+                <form action="{{ url_for('free_runway', id=loop.index0) }}" method="post" style="display:inline;">
+                    <button type="submit">Free</button>
+                </form>
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+
+    <h2>Inflight Services</h2>
+    <form action="{{ url_for('serve_meal') }}" method="post" class="form-group">
+        <button type="submit">Serve Meal</button>
+    </form>
+    <form action="{{ url_for('serve_drinks') }}" method="post" class="form-group">
+        <button type="submit">Serve Drinks</button>
+    </form>
+
+    <h2>Flight Operations</h2>
+    <form action="{{ url_for('plan_route') }}" method="post" class="form-group">
+        <label for="start">Start:</label>
+        <input type="text" id="start" name="start" required>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required>
+        <input type="submit" value="Plan Route">
+    </form>
+
+    <h2>Load Airplane State</h2>
+    <form action="{{ url_for('load_state') }}" method="post" class="form-group">
+        <label for="filename">Filename:</label>
+        <input type="text" id="filename" name="filename" required>
+        <input type="submit" value="Load State">
+    </form>
+</body>
+</html>
