@@ -234,3 +234,5 @@ pip install -r .venv\requirements.txt
 ## 👤 Автор
 
 [showmeurback]
+
+---
